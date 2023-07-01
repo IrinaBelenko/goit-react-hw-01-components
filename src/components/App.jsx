@@ -5,6 +5,7 @@ import transactions from 'data/transactions.json';
 import { Section } from './Section/Section.styled';
 import { Container } from './Container/Container.styled';
 import { Heading } from './Heading/Heading.styled';
+import { Profile } from './Profile/Profile';
 
 export const App = () => {
   return (
@@ -13,18 +14,13 @@ export const App = () => {
         <Heading marginBottom="50px" textAlign="center">
           Task 1
         </Heading>
-        <div
-          style={{
-            height: '100vh',
-            display: 'flex',
-            justifyContent: 'center',
-            alignItems: 'center',
-            fontSize: 40,
-            color: '#010101',
-          }}
-        >
-          React homework template
-        </div>
+        <Profile
+          username={user.username}
+          tag={user.tag}
+          location={user.location}
+          avatar={user.avatar}
+          stats={user.stats}
+        />
         <Heading marginTop="50px" marginBottom="50px" textAlign="center">
           Task 2
         </Heading>
