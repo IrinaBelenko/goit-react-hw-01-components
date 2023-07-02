@@ -1,7 +1,7 @@
 import user from 'data/user.json';
-import data from 'data/data.json';
-import friends from 'data/friends.json';
-import transactions from 'data/transactions.json';
+// import data from 'data/data.json';
+// import friends from 'data/friends.json';
+// import transactions from 'data/transactions.json';
 import { Section } from './Section/Section.styled';
 import { Container } from './Container/Container.styled';
 import { Heading } from './Heading/Heading.styled';
