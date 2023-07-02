@@ -1,12 +1,13 @@
 import user from 'data/user.json';
 // import data from 'data/data.json';
-// import friends from 'data/friends.json';
+import friends from 'data/friends.json';
 import transactions from 'data/transactions.json';
 import { Section } from './Section/Section.styled';
 import { Container } from './Container/Container.styled';
 import { Heading } from './Heading/Heading.styled';
 import { Profile } from './Profile/Profile';
 import { TransactionHistory } from './TransactionHistory/TransactionHistory';
+import { FriendList } from './FriendList/FriendList';
 
 export const App = () => {
   return (
@@ -28,6 +29,7 @@ export const App = () => {
         <Heading marginTop="50px" marginBottom="50px" textAlign="center">
           Task 3
         </Heading>
+        <FriendList friends={friends} />
         <Heading marginTop="50px" marginBottom="50px" textAlign="center">
           Task 4
         </Heading>
